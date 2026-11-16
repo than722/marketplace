@@ -16,12 +16,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="text-xl font-bold text-blue-600">
               Marketplace
             </Link>
-            <Link
-              href="/create"
-              className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
-            >
-              + Create listing
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link href="/connect" className="text-sm font-medium text-indigo-600 hover:underline">
+                Get paid
+              </Link>
+              <Link
+                href="/create"
+                className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+              >
+                + Create listing
+              </Link>
+            </div>
           </div>
         </header>
         <main className="mx-auto max-w-6xl px-4 py-6">{children}</main>

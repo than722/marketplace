@@ -18,6 +18,7 @@ export type Listing = {
   email: string;
   category: string;
   image_url: string | null;
+  sold: boolean;
   created_at: string;
 };
 
